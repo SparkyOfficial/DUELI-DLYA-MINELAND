@@ -1,0 +1,36 @@
+# Java/Spigot
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Build
+/target/
+/build/
+/out/
+
+# IDE
+/.idea/
+*.iws
+*.ipr
+*.iml
+/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+/logs/
+*.log
+
+# Maven
+.mvn/
+
+# Gradle
+.gradle/
+
+# Misc
+*.swp
+*~ 

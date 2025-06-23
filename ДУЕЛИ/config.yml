@@ -1,0 +1,75 @@
+npc:
+  name: "Дуэли"
+  location: world,0,64,0,0,0
+arenas:
+  - name: "arena1"
+    world: "world_duel1"
+    template_world: "arena1_template"
+    spawn1: 10,65,10,0,0
+    spawn2: -10,65,-10,0,0
+  - name: "arena2"
+    world: "world_duel2"
+    spawn1: 15,65,15,0,0
+    spawn2: -15,65,-15,0,0
+rewards:
+  money: 100
+  exp: 50
+  message: "&aВы победили в дуэли!"
+items:
+  sword: "DIAMOND_SWORD"
+  armor:
+    helmet: "DIAMOND_HELMET"
+    chestplate: "DIAMOND_CHESTPLATE"
+    leggings: "DIAMOND_LEGGINGS"
+    boots: "DIAMOND_BOOTS"
+  potions:
+    - "STRENGTH"
+    - "REGEN"
+    - "SPEED"
+  golden_apples: 3
+queue:
+  max_players: 2
+lobby:
+  world: "world"
+  x: 0
+  y: 64
+  z: 0
+  yaw: 0
+  pitch: 0
+duel-time-limit: 180
+modes:
+  classic:
+    name: "Обычная"
+    items:
+      sword: "DIAMOND_SWORD"
+      armor:
+        helmet: "DIAMOND_HELMET"
+        chestplate: "DIAMOND_CHESTPLATE"
+        leggings: "DIAMOND_LEGGINGS"
+        boots: "DIAMOND_BOOTS"
+      potions:
+        - "STRENGTH"
+        - "REGEN"
+        - "SPEED"
+      golden_apples: 3
+  archer:
+    name: "С луком"
+    items:
+      sword: "STONE_SWORD"
+      bow: "BOW"
+      arrows: 32
+      armor:
+        helmet: "CHAINMAIL_HELMET"
+        chestplate: "CHAINMAIL_CHESTPLATE"
+        leggings: "CHAINMAIL_LEGGINGS"
+        boots: "CHAINMAIL_BOOTS"
+      potions:
+        - "SPEED"
+      golden_apples: 1
+  random:
+    name: "Рандомная экипировка"
+    items: {}
+blocked-commands:
+  - /home
+  - /spawn
+  - /tp 

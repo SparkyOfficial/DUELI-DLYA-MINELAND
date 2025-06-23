@@ -1,0 +1,14 @@
+name: Duels
+main: net.mineland.duels.DuelPlugin
+version: 1.0.0
+author: MinelandTeam
+description: Автономный режим PvP-дуэлей для Mineland Network
+api-version: 1.13
+dependencies:
+  - Vault
+  - PlaceholderAPI
+commands:
+  duel:
+    description: Основная команда дуэлей
+    usage: /duel <leave|stats|top>
+    aliases: [duels] 
